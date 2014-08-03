@@ -30,25 +30,28 @@
 	<script src="js/fullpage.js"></script>
 	<script src="js/less.min.js"></script>
     <!-- JS -->
-    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
 </head>
 <body>
 <nav>
 	<li>
-		<ul><a href="#">Sports</a></ul>
-		<ul><a href="#">General</a></ul>
-		<ul><a href="#">Projects</a></ul>
-		<p id="test"><span>________</span></p>
-		
+		<ul><a id="sports-nav" href="#" data-index="3">Sports</a></ul>
+		<ul><a id="general-nav" href="#" data-index="1">General</a></ul>
+		<ul><a id="projects-nav" href="#" data-index="2">Projects</a></ul>
 	</li>
+	<div class="line center"></div>
 </nav>
 <div id="fullpage">
-	<div class="section" id="payment">
-		<div class="slide" id="step1" data-anchor="step1">
+	<div class="section">
+		<div class="slide" id="general-page" data-anchor="general-page">
 			
 		</div>
 		
-		<div class="slide" id="step2" data-anchor="step2-da">
+		<div class="slide" id="projects-page" data-anchor="projects-page">
+			
+		</div>
+
+		<div class="slide" id="sports-page" data-anchor="sports-page">
 			
 		</div>
 </div>
