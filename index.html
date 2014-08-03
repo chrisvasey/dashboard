@@ -1,111 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>	
+	<title>Payment System</title>
 
-  <title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+	
+	<!-- LESS -->
+	<link rel="stylesheet" href="css/main.less" type="text/less" media="screen"/>
 
+	<!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/main.less" type="text/less" media="screen" />
-  <!-- Scripts -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/less.min.js"></script>
-  <!-- Font import -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+	
+	<!-- IE Javascript fallback -->
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	
+	<!-- scripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/less.min.js"></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </head>
 <body>
-<div class="row">
-  <div class="col-sm-6 col-md-4 personal-info">
-    <div class="thumbnail">
-      <img class="img-circle" width="225px" src="images/me.jpg" alt="me">
-      <div class="caption">
-        <h3>Basic Infomation</h3>
-        <p><span>Name:</span> Chris Vasey<br>
-         <span>Age:</span> 19<br>
-         <span>Twitter:</span> chris_vasey
-      </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4 personal-info">
-    <div class="thumbnail">
-      <img class="img-circle" width="225px" src="images/me.jpg" alt="me">
-      <div class="caption">
-        <h3>Basic Infomation</h3>
-        <p><span>Name:</span> Chris Vasey<br>
-         <span>Age:</span> 19<br>
-         <span>Twitter:</span> chris_vasey
-      </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4 personal-info">
-    <div class="thumbnail">
-      <img class="img-circle" width="225px" src="images/me.jpg" alt="me">
-      <div class="caption">
-        <h3>Basic Infomation</h3>
-        <p><span>Name:</span> Chris Vasey<br>
-         <span>Age:</span> 19<br>
-         <span>Twitter:</span> chris_vasey
-      </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
+<nav>
+	<li>
+		<ul><a href="#">Sports</a></ul>
+		<ul><a href="#">General</a></ul>
+		<ul><a href="#">Projects</a></ul>
+		<p id="test"><span>________</span></p>
+		
+	</li>
+</nav>
+<div id="fullpage">
+	<div class="section" id="payment">
+		<div class="slide" id="step1" data-anchor="step1">
+			
+		</div>
+		
+		<div class="slide" id="step2" data-anchor="step2-da">
+			
+		</div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6 col-md-4 personal-info">
-    <div class="thumbnail">
-      <img class="img-circle" width="225px" src="images/me.jpg" alt="me">
-      <div class="caption">
-        <h3>Basic Infomation</h3>
-        <p><span>Name:</span> Chris Vasey<br>
-         <span>Age:</span> 19<br>
-         <span>Twitter:</span> chris_vasey
-      </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4 personal-info">
-    <div class="thumbnail">
-      <img class="img-circle" width="225px" src="images/me.jpg" alt="me">
-      <div class="caption">
-        <h3>Basic Infomation</h3>
-        <p><span>Name:</span> Chris Vasey<br>
-         <span>Age:</span> 19<br>
-         <span>Twitter:</span> chris_vasey
-      </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4 personal-info">
-    <div class="thumbnail">
-      <img class="img-circle" width="225px" src="images/me.jpg" alt="me">
-      <div class="caption">
-        <h3>Basic Infomation</h3>
-        <p><span>Name:</span> Chris Vasey<br>
-         <span>Age:</span> 19<br>
-         <span>Twitter:</span> chris_vasey
-      </p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-  
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

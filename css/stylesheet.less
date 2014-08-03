@@ -1,11 +1,55 @@
 html, body {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	height: 100%;
 	width: 100%;
+	// font-family: 'Open Sans', sans-serif !important;
 }
 
-.personal-info {
-	width: 300px;
-	margin: 20px;
+// Overwriting styles for control arrows for slides
+.controlArrow.prev {
+	display: none;
+	left: 50px;
+}
+.controlArrow.next{
+	display: none;
+	right: 50px;
+}
+
+nav {
+	li {
+		margin-top: 15px;
+		list-style-type: none;
+		ul {
+				display: inline-block;
+			a {
+				font-family: 'Open Sans', sans-serif !important;
+				font-weight: 300;
+				color: black;
+				list-style-type: none;		
+			}
+		}
+		p {
+			left: 100%;
+			-webkit-transition-property: all;
+			-webkit-transition-duration: 2s;
+			margin-top: -15px;
+			span {
+				color: #e74c3c;
+				font-weight: 700;
+			}
+		}
+
+		.left {
+			p{
+				// right: 100%;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:950px) {
+	
 }
