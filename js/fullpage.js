@@ -25,6 +25,22 @@ $(document).ready(function() {
 					left: '0%'
 				}, 1500, 'easeOutExpo');
 			}
+
+			//first slide of the second section
+    if(anchorLink == 'home' && slideIndex == 0){
+        $(".line").removeClass('center left right');
+		$(".line").addClass('left');
+    }
+
+    if(anchorLink == 'home' && slideIndex == 1){
+        $(".line").removeClass('center left right');
+		$(".line").addClass('center');
+    }
+
+    if(anchorLink == 'home' && slideIndex == 2){
+        $(".line").removeClass('center left right');
+		$(".line").addClass('right');
+    }
 		}
 	});
 	

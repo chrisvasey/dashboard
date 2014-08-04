@@ -33,16 +33,20 @@
     <script src="js/nav.js"></script>
 </head>
 <body>
-<nav>
+<nav id="menu">
 	<li>
-		<ul><a id="sports-nav" href="#" data-index="3">Sports</a></ul>
-		<ul><a id="general-nav" href="#" data-index="1">General</a></ul>
-		<ul><a id="projects-nav" href="#" data-index="2">Projects</a></ul>
+		<ul><p id="sports-nav" class="toSlide" data-index="sports-page">Sports</p></ul>
+		<ul><p id="general-nav" class="toSlide" data-index="general-page">General</p></ul>
+		<ul><p id="projects-nav" class="toSlide" data-index="home/projects-page">Projects</p></ul>
 	</li>
 	<div class="line center"></div>
 </nav>
 <div id="fullpage">
 	<div class="section">
+		<div class="slide" id="sports-page" data-anchor="sports-page">
+			
+		</div>
+		
 		<div class="slide" id="general-page" data-anchor="general-page">
 			
 		</div>
@@ -51,9 +55,6 @@
 			
 		</div>
 
-		<div class="slide" id="sports-page" data-anchor="sports-page">
-			
-		</div>
 </div>
 
 <!-- Bootstrap -->
